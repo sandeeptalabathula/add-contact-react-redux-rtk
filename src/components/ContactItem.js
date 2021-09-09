@@ -9,8 +9,8 @@ import { addContact } from '../store/contactSlice'
 export default function ContactItem(publicContact) {
   const dispatch = useDispatch()
   const [loading, setLoading] = useState(false)
-
-  const contacts = useSelector((state) => state.contacts.contacts)
+  //this line will subscribe to changes in contacts list from store.  
+  //const contacts = useSelector((state) => state.contacts.contacts)
 
   useEffect(() => {
      console.log("useEffect in ContactItem");
